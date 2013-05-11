@@ -1,0 +1,37 @@
+<RCC>
+  <qresource>
+    <file>icons/menu.png</file>
+    <file>icons/settings.png</file>
+    <file>icons/exit.png</file>
+    <file>icons/order-with.png</file>
+    <file>icons/order-without.png</file>
+    <file>icons/cancel.png</file>
+    <file>icons/ok.png</file>
+    <file>icons/eraser.png</file>
+    <file>icons/table.png</file>
+    <file>icons/split.png</file>
+    <file>icons/group-pay.png</file>
+    <file>icons/void.png</file>
+    <file>icons/pay.png</file>
+    <file>icons/ok-print.png</file>
+    <file>icons/new.png</file>
+    <file>icons/edit.png</file>
+    <file>icons/list-add.png</file>
+    <file>icons/list-remove.png</file>
+    <file>icons/reports.png</file>
+    <file>icons/print.png</file>
+    <file>icons/ticket.png</file>
+    <file>icons/no-ticket.png</file>
+    <file>icons/clock.png</file>
+    <file>icons/view-fullscreen.png</file>
+    <file>icons/arrow-left.png</file>
+    <file>icons/arrow-right.png</file>
+    <file>logo.png</file>
+
+    <file>LillePOS-sqlite.sql</file>
+    <file>LillePOS-sqlite-update-2.sql</file>
+
+    <file>LillePOS-mysql.sql</file>
+    <file>LillePOS-mysql-update-2.sql</file>
+  </qresource>
+</RCC>

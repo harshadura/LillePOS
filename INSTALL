@@ -1,0 +1,49 @@
+Copyright 2010, Martin Koller, kollix@aon.at
+
+To install LillePOS from source, you need some prerequisites to build it.
+
+First, LillePOS is based on Qt (the eldest version I tested was 4.4)
+
+It can use either SQLite or MySQL, so you need the Qt sqldrivers for
+the DB you intend to use.
+
+Clearly a C++ compiler and all the usual development stuff ;-)
+
+To compile the program, simply use Qt's qmake tool, e.g. (inside the source dir):
+
+qmake
+make
+
+As all icons used in LillePOS will be compiled into the code
+(via Qt's resource system), you don't need to install these.
+
+To generate the english translation catalog, you need to run
+
+lrelease LillePOS.pro
+
+This generates the "compiled" binary translation file LillePOS_en.qm
+which you need to place into the same directory as the LillePOS executable.
+
+Just copy LillePOS (and the translation file) to some directory
+(e.g. /opt/LillePOS/) and run it.
+On the first start it will ask you which database backend you want to use.
+If you use SQLite, a file named LillePOS.db will be created in the
+current working directory, so you need read/write access to it.
+This is the easiest way as you do not need to do any database setup.
+LillePOS creates all tables it needs on its own.
+
+If you use MySQL, you need to enter the hostname of the MySQL server
+and a username/password for that user. This user needs to have the right
+to create a database (named LillePOS) and all the tables in it.
+So you only need to define this user in MySQL - the database and all tables
+will be created on the first run of LillePOS automatically.
+
+In addition some settings are stored in a file in ~/.config/LillePOS/LillePOS.ini
+
+For customization of the application, you can change the icons/menu.png file,
+which will be used on the menu button on the main screen.
+
+You also normally want to change the icon printed on each invoice.
+LillePOS uses the logo.png file for this.
+The shop name and address etc. can be configured directly within the
+application via the settings dialog.

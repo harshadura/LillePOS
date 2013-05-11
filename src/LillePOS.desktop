@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=LillePOS
+Exec=LillePOS
+Type=Application
+Icon=LillePOS
+Comment=Point Of Sale application for small cafes/bars/restaurants
+Terminal=false
+Categories=Office;Finance;
